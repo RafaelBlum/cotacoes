@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="./icon/home.gif">
+
+    <title>Contações</title>
+</head>
+<body>
+    <div class="main-content">
+        {{> header}}
+    
+        <div class="row">
+            <div class="col-md-12">
+                <form id="form" role="form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label class="input-group-addon" for="busca">Buscar ativo</label>
+                            <input id="busca" type="text" class="form-control" placeholder="Código de ativo">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-block btn-danger">Buscar ativo</button>
+                </form>
+            </div>
+        
+            <div class="col-md-12">
+                <span class="btn-block">
+                    <hr/>
+                    <p id="symbol">     </p>
+                    <p id="price_open"> </p>
+                    <p id="price">      </p>
+                    <p id="day_high">   </p>
+                    <p id="day_low">    </p>
+                    <hr/>
+                </span>
+            </div>
+        </div>
+    </div>
+ 
+    {{> footer}}
+</body>
+    <script src="/js/app.js"></script>
+    <script src="/js/jquery-1.12.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</html> 
