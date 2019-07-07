@@ -28,7 +28,7 @@ cotacoesForm.addEventListener('submit', (event) => {
     fetch(`/cotacoes?ativo=${ativo}`).then((response) => {
         response.json().then((data) =>{
             if(data.error){
-                mainMensage.innerText = `Alguma coisa ocorreu!! -> ${data.error.mensage} [error ${data.error.code}]`;
+                mainMensage.innerText = `Alguma coisa ocorreu de errado! -> ${data.error.mensage} [error ${data.error.code}]`;
             }else{
                 mainMensage.innerText = `Bolsa: ${data.symbol}`;
                 price_open.innerHTML = `Valor de abertura ${data.price_open}`;
