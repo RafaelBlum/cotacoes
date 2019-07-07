@@ -22,9 +22,18 @@
                     <p>ssh -T git@github.com</p>
                     <p>Hi RafaelBlum! You've successfully authenticated, but GitHub does not provide shell access.</p>
                     git init
+                    git remote rm origin ("RM" NÃO PEGA ACESSO DIRETO DE USUARIO E SENHA)
+                    git remote add origin https://github.com/RafaelBlum/cotacao.git
+                    git push -u origin master (PRECISAMOS COLOCAR MANUALMENTE USUARIO E SENHA DEVIDO "RM")
+
+                    MODIFICANDO ARQUIVOS NO PROJETO SVCODE, PODEMOS ATUALIZAR NO GitHub
+                    git status
+                    git add .
+                    git commit -m "detalhes do commit"
                     git remote rm origin
                     git remote add origin https://github.com/RafaelBlum/cotacao.git
                     git push -u origin master
+
                 </div>
             
                 <div class="col-md-12">
