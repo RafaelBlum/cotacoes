@@ -76,8 +76,8 @@ app.get('*', (req, res) =>{
         errorMessage: 'Page not found - O link que você digitou está incorreto!'
     });
 });
-const port = process.env.port || 4000
+const port = process.env.PORT || 4000
 
 app.listen(port, ()=>{
-    console.log('Server is up port in project cotacoes...')
+    console.log('Server is up port...')
 });
