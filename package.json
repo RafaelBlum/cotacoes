@@ -1,7 +1,7 @@
 {
   "name": "web-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Alterando",
   "main": "index.js",
   "scripts": {
     "start": "node ./src/app.js",
